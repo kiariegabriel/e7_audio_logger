@@ -1,0 +1,8 @@
+{
+    "debug.hideSlowPreLaunchWarning": true,
+    "debug.showInStatusBar": "never",
+    "clangd.arguments": [
+        "--compile-commands-dir=c:\\Users\\Admin\\Documents\\alif\\e7_audio_logger\\out\\M55_HE\\AE722F80F55D5LS\\Debug"
+    ],
+    "cmake.sourceDirectory": "C:/Users/Admin/Documents/alif/e7_audio_logger/tmp"
+}

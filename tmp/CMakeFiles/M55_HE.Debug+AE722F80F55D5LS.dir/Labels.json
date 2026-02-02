@@ -1,0 +1,52 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/CMakeFiles/M55_HE.Debug+AE722F80F55D5LS"
+		},
+		{
+			"file" : "C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/CMakeFiles/M55_HE.Debug+AE722F80F55D5LS.rule"
+		},
+		{
+			"file" : "C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/CMakeFiles/M55_HE.Debug+AE722F80F55D5LS-complete.rule"
+		},
+		{
+			"file" : "C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/M55_HE.Debug+AE722F80F55D5LS/src/M55_HE.Debug+AE722F80F55D5LS-stamp/M55_HE.Debug+AE722F80F55D5LS-build.rule"
+		},
+		{
+			"file" : "C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/M55_HE.Debug+AE722F80F55D5LS/src/M55_HE.Debug+AE722F80F55D5LS-stamp/M55_HE.Debug+AE722F80F55D5LS-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/M55_HE.Debug+AE722F80F55D5LS/src/M55_HE.Debug+AE722F80F55D5LS-stamp/M55_HE.Debug+AE722F80F55D5LS-database.rule"
+		},
+		{
+			"file" : "C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/M55_HE.Debug+AE722F80F55D5LS/src/M55_HE.Debug+AE722F80F55D5LS-stamp/M55_HE.Debug+AE722F80F55D5LS-download.rule"
+		},
+		{
+			"file" : "C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/M55_HE.Debug+AE722F80F55D5LS/src/M55_HE.Debug+AE722F80F55D5LS-stamp/M55_HE.Debug+AE722F80F55D5LS-executes.rule"
+		},
+		{
+			"file" : "C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/M55_HE.Debug+AE722F80F55D5LS/src/M55_HE.Debug+AE722F80F55D5LS-stamp/M55_HE.Debug+AE722F80F55D5LS-install.rule"
+		},
+		{
+			"file" : "C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/M55_HE.Debug+AE722F80F55D5LS/src/M55_HE.Debug+AE722F80F55D5LS-stamp/M55_HE.Debug+AE722F80F55D5LS-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/M55_HE.Debug+AE722F80F55D5LS/src/M55_HE.Debug+AE722F80F55D5LS-stamp/M55_HE.Debug+AE722F80F55D5LS-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/M55_HE.Debug+AE722F80F55D5LS/src/M55_HE.Debug+AE722F80F55D5LS-stamp/M55_HE.Debug+AE722F80F55D5LS-test.rule"
+		},
+		{
+			"file" : "C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/M55_HE.Debug+AE722F80F55D5LS/src/M55_HE.Debug+AE722F80F55D5LS-stamp/M55_HE.Debug+AE722F80F55D5LS-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"M55_HE.Debug+AE722F80F55D5LS"
+		],
+		"name" : "M55_HE.Debug+AE722F80F55D5LS"
+	}
+}

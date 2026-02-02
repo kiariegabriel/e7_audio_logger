@@ -1,0 +1,27 @@
+# A project translates into one executable or library.
+project:
+  device: :M55_HE
+
+  groups:
+    - group: Source Files
+      files:
+        - file: ./main.c
+
+  # List components to use for your application.
+  # A software component is a re-usable unit that may be configurable.
+  components:
+    - component: ARM::CMSIS:CORE
+    - component: Device:Startup
+    - component: CMSIS Driver:SAI
+    - component: Device:SOC Peripherals:DMA
+    - component: Device:SOC Peripherals:SDMMC
+    - component: Device:SOC Peripherals:PINCONF
+    - component: Device:SOC Peripherals:PDM
+    - component: CMSIS Driver:I2C
+
+  # List executable file formats to be generated.
+  output:
+    type:
+      - elf
+      - hex
+      - map

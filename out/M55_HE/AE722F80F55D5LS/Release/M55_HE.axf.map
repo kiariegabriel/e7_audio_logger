@@ -1,0 +1,532 @@
+Component: Arm Compiler for Embedded 6.24 Tool: armlink [5f371500]
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x80004505
+
+  Load Region LR_ROM (Base: 0x80000000, Size: 0x00009e10, Max: 0x00200000, ABSOLUTE)
+
+    Execution Region ITCM_RAM (Base: 0x00000000, Size: 0x00000000, Max: 0x00040000, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region RW_SRAM0 (Base: 0x02000000, Size: 0x00000000, Max: 0x00400000, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region RW_SRAM1 (Base: 0x08000000, Size: 0x00000000, Max: 0x00280000, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region PADDING (Base: 0x08000000, Size: 0x00000010, Max: 0x00000010, OVERLAY)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x00000010   Zero   RW            4    PADDING.bss         anon$$obj.o
+
+
+    Execution Region RW_RAM (Base: 0x20000000, Size: 0x000019bc, Max: 0x00032000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000004   Data   RW         1093    .data               c_wu.l(stdio_streams.o)
+    0x20000004   0x00000004   Data   RW         1094    .data               c_wu.l(stdio_streams.o)
+    0x20000008   0x00000004   Data   RW         1095    .data               c_wu.l(stdio_streams.o)
+    0x2000000c   0x00000640   Data   RW          530    .data.DMA0          Driver_DMA.o
+    0x2000064c   0x00000640   Data   RW          531    .data.DMALOCAL      Driver_DMA.o
+    0x20000c8c   0x00000074   Data   RW          133    .data.I2C0_RES      Driver_I2C.o
+    0x20000d00   0x00000074   Data   RW          135    .data.I2C1_RES      Driver_I2C.o
+    0x20000d74   0x00000074   Data   RW          137    .data.I2C2_RES      Driver_I2C.o
+    0x20000de8   0x00000074   Data   RW          139    .data.I2C3_RES      Driver_I2C.o
+    0x20000e5c   0x0000001c   Data   RW          303    .data.I2S0_CONFIG   Driver_I2S.o
+    0x20000e78   0x00000044   Data   RW          293    .data.I2S0_RES      Driver_I2S.o
+    0x20000ebc   0x0000001c   Data   RW          304    .data.I2S1_CONFIG   Driver_I2S.o
+    0x20000ed8   0x00000044   Data   RW          295    .data.I2S1_RES      Driver_I2S.o
+    0x20000f1c   0x0000001c   Data   RW          305    .data.I2S2_CONFIG   Driver_I2S.o
+    0x20000f38   0x00000044   Data   RW          297    .data.I2S2_RES      Driver_I2S.o
+    0x20000f7c   0x0000001c   Data   RW          306    .data.I2S3_CONFIG   Driver_I2S.o
+    0x20000f98   0x00000044   Data   RW          299    .data.I2S3_RES      Driver_I2S.o
+    0x20000fdc   0x0000001c   Data   RW          307    .data.LPI2S_CONFIG  Driver_I2S.o
+    0x20000ff8   0x00000044   Data   RW          301    .data.LPI2S_RES     Driver_I2S.o
+    0x2000103c   0x00000040   Data   RW          630    .data.LPPDM_RES     Driver_PDM.o
+    0x2000107c   0x00000040   Data   RW          629    .data.PDM_RES       Driver_PDM.o
+    0x200010bc   0x00000004   Data   RW          981    .data.SystemAPBClock  sys_clocks.o
+    0x200010c0   0x00000004   Data   RW          930    .data.SystemCoreClock  system.o
+    0x200010c4   0x00000054   Zero   RW         1090    .bss                c_wu.l(stdio_streams.o)
+    0x20001118   0x00000054   Zero   RW         1091    .bss                c_wu.l(stdio_streams.o)
+    0x2000116c   0x00000054   Zero   RW         1092    .bss                c_wu.l(stdio_streams.o)
+    0x200011c0   0x00000060   Zero   RW         1423    .bss                c_wu.l(libspace.o)
+    0x20001220   0x00000001   Zero   RW           12    .bss.active_dma_buffer  main.o
+    0x20001221   0x00000001   PAD
+    0x20001222   0x00000780   Zero   RW            9    .bss.audio_buffer_0  main.o
+    0x200019a2   0x00000002   PAD
+    0x200019a4   0x00000004   Zero   RW           13    .bss.buffer_fill_index  main.o
+    0x200019a8   0x00000002   Zero   RW          795    .bss.cc             sd_host.o
+    0x200019aa   0x00000002   PAD
+    0x200019ac   0x00000004   Zero   RW           11    .bss.dma_complete_count  main.o
+    0x200019b0   0x00000002   Zero   RW          793    .bss.eis            sd_host.o
+    0x200019b2   0x00000001   Zero   RW          169    .bss.i2c_master_rx_isr.tx_abort  i2c.o
+    0x200019b3   0x00000001   Zero   RW          168    .bss.i2c_master_tx_isr.tx_abort  i2c.o
+    0x200019b4   0x00000001   Zero   RW           14    .bss.is_recording   main.o
+    0x200019b5   0x00000001   PAD
+    0x200019b6   0x00000002   Zero   RW          794    .bss.nis            sd_host.o
+    0x200019b8   0x00000001   Zero   RW           10    .bss.total_samples_recorded  main.o
+
+
+    Execution Region NS_REGION_0 (Base: 0x20004000, Size: 0x00001600, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20004000   0x00001600   Data   RW          703    sd_dma_buf          sd.o
+
+
+    Execution Region NS_REGION_0_PAD (Base: 0x20008000, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region ARM_LIB_HEAP (Base: 0x20008000, Size: 0x00004000, Max: 0x00004000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20008000   0x00004000   Zero   RW            1    ARM_LIB_HEAP.bss    anon$$obj.o
+
+
+    Execution Region APP_HEAP (Base: 0x2000c000, Size: 0x00008000, Max: 0x00008000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x2000c000   0x00008000   Zero   RW            2    APP_HEAP.bss        anon$$obj.o
+
+
+    Execution Region ARM_LIB_STACK (Base: 0x2003e000, Size: 0x00002000, Max: 0x00002000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x2003e000   0x00002000   Zero   RW            3    ARM_LIB_STACK.bss   anon$$obj.o
+
+
+    Execution Region ER_ROM_VECTORS (Base: 0x80000000, Size: 0x000007c0, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x80000000   0x000007c0   Data   RO          958    RESET               vectors.o
+
+
+    Execution Region ER_ROM (Base: 0x800007c0, Size: 0x00006de8, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x800007c0   0x00000008   Code   RO         1108  * !!!main             c_wu.l(__main.o)
+    0x800007c8   0x0000005c   Code   RO         1546    !!!scatter          c_wu.l(__scatter.o)
+    0x80000824   0x0000001a   Code   RO         1550    !!handler_copy      c_wu.l(__scatter_copy.o)
+    0x8000083e   0x00000002   PAD
+    0x80000840   0x00000002   Code   RO         1547    !!handler_null      c_wu.l(__scatter.o)
+    0x80000842   0x00000002   PAD
+    0x80000844   0x0000001c   Code   RO         1552    !!handler_zi        c_wu.l(__scatter_zi.o)
+    0x80000860   0x00000000   Code   RO         1079    .ARM.Collect$$_printf_percent$$00000000  c_wu.l(_printf_percent.o)
+    0x80000860   0x00000006   Code   RO         1078    .ARM.Collect$$_printf_percent$$00000003  c_wu.l(_printf_f.o)
+    0x80000866   0x00000006   Code   RO         1076    .ARM.Collect$$_printf_percent$$00000009  c_wu.l(_printf_d.o)
+    0x8000086c   0x00000006   Code   RO         1077    .ARM.Collect$$_printf_percent$$0000000A  c_wu.l(_printf_u.o)
+    0x80000872   0x00000006   Code   RO         1075    .ARM.Collect$$_printf_percent$$0000000C  c_wu.l(_printf_x.o)
+    0x80000878   0x00000006   Code   RO         1074    .ARM.Collect$$_printf_percent$$00000014  c_wu.l(_printf_s.o)
+    0x8000087e   0x00000004   Code   RO         1205    .ARM.Collect$$_printf_percent$$00000017  c_wu.l(_printf_percent_end.o)
+    0x80000882   0x00000002   Code   RO         1475    .ARM.Collect$$libinit$$00000000  c_wu.l(libinit.o)
+    0x80000884   0x00000004   Code   RO         1347    .ARM.Collect$$libinit$$00000001  c_wu.l(libinit2.o)
+    0x80000888   0x00000000   Code   RO         1350    .ARM.Collect$$libinit$$00000004  c_wu.l(libinit2.o)
+    0x80000888   0x00000000   Code   RO         1352    .ARM.Collect$$libinit$$00000006  c_wu.l(libinit2.o)
+    0x80000888   0x00000008   Code   RO         1508    .ARM.Collect$$libinit$$0000000A  c_wu.l(libinit5.o)
+    0x80000890   0x00000000   Code   RO         1355    .ARM.Collect$$libinit$$0000000C  c_wu.l(libinit2.o)
+    0x80000890   0x00000000   Code   RO         1357    .ARM.Collect$$libinit$$0000000E  c_wu.l(libinit2.o)
+    0x80000890   0x00000000   Code   RO         1359    .ARM.Collect$$libinit$$00000010  c_wu.l(libinit2.o)
+    0x80000890   0x00000006   Code   RO         1360    .ARM.Collect$$libinit$$00000011  c_wu.l(libinit2.o)
+    0x80000896   0x00000000   Code   RO         1362    .ARM.Collect$$libinit$$00000013  c_wu.l(libinit2.o)
+    0x80000896   0x00000000   Code   RO         1364    .ARM.Collect$$libinit$$00000015  c_wu.l(libinit2.o)
+    0x80000896   0x00000000   Code   RO         1366    .ARM.Collect$$libinit$$00000017  c_wu.l(libinit2.o)
+    0x80000896   0x0000000a   Code   RO         1367    .ARM.Collect$$libinit$$00000018  c_wu.l(libinit2.o)
+    0x800008a0   0x00000000   Code   RO         1368    .ARM.Collect$$libinit$$00000019  c_wu.l(libinit2.o)
+    0x800008a0   0x00000000   Code   RO         1370    .ARM.Collect$$libinit$$0000001B  c_wu.l(libinit2.o)
+    0x800008a0   0x00000000   Code   RO         1372    .ARM.Collect$$libinit$$0000001D  c_wu.l(libinit2.o)
+    0x800008a0   0x00000000   Code   RO         1374    .ARM.Collect$$libinit$$0000001F  c_wu.l(libinit2.o)
+    0x800008a0   0x00000000   Code   RO         1376    .ARM.Collect$$libinit$$00000021  c_wu.l(libinit2.o)
+    0x800008a0   0x00000000   Code   RO         1378    .ARM.Collect$$libinit$$00000023  c_wu.l(libinit2.o)
+    0x800008a0   0x00000000   Code   RO         1380    .ARM.Collect$$libinit$$00000025  c_wu.l(libinit2.o)
+    0x800008a0   0x00000004   Code   RO         1381    .ARM.Collect$$libinit$$00000026  c_wu.l(libinit2.o)
+    0x800008a4   0x00000000   Code   RO         1382    .ARM.Collect$$libinit$$00000027  c_wu.l(libinit2.o)
+    0x800008a4   0x00000000   Code   RO         1386    .ARM.Collect$$libinit$$0000002E  c_wu.l(libinit2.o)
+    0x800008a4   0x00000000   Code   RO         1388    .ARM.Collect$$libinit$$00000030  c_wu.l(libinit2.o)
+    0x800008a4   0x00000000   Code   RO         1390    .ARM.Collect$$libinit$$00000032  c_wu.l(libinit2.o)
+    0x800008a4   0x00000000   Code   RO         1392    .ARM.Collect$$libinit$$00000034  c_wu.l(libinit2.o)
+    0x800008a4   0x00000002   Code   RO         1393    .ARM.Collect$$libinit$$00000035  c_wu.l(libinit2.o)
+    0x800008a6   0x00000002   PAD
+    0x800008a8   0x00000008   Code   RO         1509    .ARM.Collect$$libinit$$0000271B  c_wu.l(libinit5.o)
+    0x800008b0   0x00000002   Code   RO         1543    .ARM.Collect$$libshutdown$$00000000  c_wu.l(libshutdown.o)
+    0x800008b2   0x00000000   Code   RO         1395    .ARM.Collect$$libshutdown$$00000002  c_wu.l(libshutdown2.o)
+    0x800008b2   0x00000004   Code   RO         1396    .ARM.Collect$$libshutdown$$00000003  c_wu.l(libshutdown2.o)
+    0x800008b6   0x00000000   Code   RO         1397    .ARM.Collect$$libshutdown$$00000004  c_wu.l(libshutdown2.o)
+    0x800008b6   0x00000000   Code   RO         1400    .ARM.Collect$$libshutdown$$00000007  c_wu.l(libshutdown2.o)
+    0x800008b6   0x00000000   Code   RO         1403    .ARM.Collect$$libshutdown$$0000000A  c_wu.l(libshutdown2.o)
+    0x800008b6   0x00000000   Code   RO         1405    .ARM.Collect$$libshutdown$$0000000C  c_wu.l(libshutdown2.o)
+    0x800008b6   0x00000000   Code   RO         1408    .ARM.Collect$$libshutdown$$0000000F  c_wu.l(libshutdown2.o)
+    0x800008b6   0x00000002   Code   RO         1409    .ARM.Collect$$libshutdown$$00000010  c_wu.l(libshutdown2.o)
+    0x800008b8   0x00000000   Code   RO         1122    .ARM.Collect$$rtentry$$00000000  c_wu.l(__rtentry.o)
+    0x800008b8   0x00000004   Code   RO         1236    .ARM.Collect$$rtentry$$00000001  c_wu.l(__rtentry2.o)
+    0x800008bc   0x00000004   Code   RO         1251    .ARM.Collect$$rtentry$$00000007  c_wu.l(__rtentry7.o)
+    0x800008c0   0x00000000   Code   RO         1239    .ARM.Collect$$rtentry$$00000009  c_wu.l(__rtentry2.o)
+    0x800008c0   0x00000004   Code   RO         1240    .ARM.Collect$$rtentry$$0000000A  c_wu.l(__rtentry2.o)
+    0x800008c4   0x00000000   Code   RO         1242    .ARM.Collect$$rtentry$$0000000C  c_wu.l(__rtentry2.o)
+    0x800008c4   0x00000008   Code   RO         1243    .ARM.Collect$$rtentry$$0000000D  c_wu.l(__rtentry2.o)
+    0x800008cc   0x00000004   Code   RO         1252    .ARM.Collect$$rtentry$$00002718  c_wu.l(__rtentry7.o)
+    0x800008d0   0x00000002   Code   RO         1486    .ARM.Collect$$rtexit$$00000000  c_wu.l(rtexit.o)
+    0x800008d2   0x00000000   Code   RO         1517    .ARM.Collect$$rtexit$$00000002  c_wu.l(rtexit2.o)
+    0x800008d2   0x00000004   Code   RO         1518    .ARM.Collect$$rtexit$$00000003  c_wu.l(rtexit2.o)
+    0x800008d6   0x00000006   Code   RO         1519    .ARM.Collect$$rtexit$$00000004  c_wu.l(rtexit2.o)
+    0x800008dc   0x00000018   Code   RO         1020    .text               c_wu.l(noretval__2printf.o)
+    0x800008f4   0x00000040   Code   RO         1022    .text               c_wu.l(noretval__2snprintf.o)
+    0x80000934   0x0000004e   Code   RO         1026    .text               c_wu.l(_printf_pad.o)
+    0x80000982   0x00000052   Code   RO         1028    .text               c_wu.l(_printf_str.o)
+    0x800009d4   0x00000078   Code   RO         1030    .text               c_wu.l(_printf_dec.o)
+    0x80000a4c   0x00000058   Code   RO         1035    .text               c_wu.l(_printf_hex_int.o)
+    0x80000aa4   0x00000188   Code   RO         1071    .text               c_wu.l(__printf_flags_ss_wp.o)
+    0x80000c2c   0x00000064   Code   RO         1080    .text               c_wu.l(fflush.o)
+    0x80000c90   0x0000000c   Code   RO         1084    .text               c_wu.l(putchar.o)
+    0x80000c9c   0x0000002c   Code   RO         1086    .text               c_wu.l(puts.o)
+    0x80000cc8   0x000000f0   Code   RO         1088    .text               c_wu.l(fopen.o)
+    0x80000db8   0x0000004c   Code   RO         1096    .text               c_wu.l(fclose.o)
+    0x80000e04   0x0000008a   Code   RO         1104    .text               c_wu.l(rt_memcpy_v6.o)
+    0x80000e8e   0x0000004e   Code   RO         1106    .text               c_wu.l(rt_memclr_w.o)
+    0x80000edc   0x00000066   Code   RO         1116    .text               c_wu.l(sys_io.o)
+    0x80000f42   0x0000005e   Code   RO         1131    .text               c_wu.l(h1_alloc.o)
+    0x80000fa0   0x0000004e   Code   RO         1133    .text               c_wu.l(h1_free.o)
+    0x80000fee   0x00000016   Code   RO         1189    .text               c_wu.l(_rserrno.o)
+    0x80001004   0x000000b2   Code   RO         1191    .text               c_wu.l(_printf_intcommon.o)
+    0x800010b6   0x0000041c   Code   RO         1193    .text               c_wu.l(_printf_fp_dec.o)
+    0x800014d2   0x00000002   PAD
+    0x800014d4   0x00000030   Code   RO         1197    .text               c_wu.l(_printf_char_common.o)
+    0x80001504   0x00000010   Code   RO         1199    .text               c_wu.l(_snputc.o)
+    0x80001514   0x0000002c   Code   RO         1201    .text               c_wu.l(_printf_char.o)
+    0x80001540   0x00000024   Code   RO         1203    .text               c_wu.l(_printf_char_file.o)
+    0x80001564   0x000000f8   Code   RO         1210    .text               c_wu.l(fseek.o)
+    0x8000165c   0x00000108   Code   RO         1212    .text               c_wu.l(stdio.o)
+    0x80001764   0x00000138   Code   RO         1215    .text               c_wu.l(initio.o)
+    0x8000189c   0x00000064   Code   RO         1221    .text               c_wu.l(rt_memcpy_w.o)
+    0x80001900   0x00000002   Code   RO         1233    .text               c_wu.l(use_no_semi.o)
+    0x80001902   0x00000000   Code   RO         1235    .text               c_wu.l(indicate_semi.o)
+    0x80001902   0x00000002   PAD
+    0x80001904   0x00000008   Code   RO         1261    .text               c_wu.l(rt_heap_descriptor_intlibspace.o)
+    0x8000190c   0x00000008   Code   RO         1266    .text               c_wu.l(rt_locale_intlibspace.o)
+    0x80001914   0x00000008   Code   RO         1271    .text               c_wu.l(rt_errno_addr_intlibspace.o)
+    0x8000191c   0x00000004   Code   RO         1273    .text               c_wu.l(hguard.o)
+    0x80001920   0x0000008a   Code   RO         1275    .text               c_wu.l(init_alloc.o)
+    0x800019aa   0x0000000c   Code   RO         1279    .text               c_wu.l(h1_init.o)
+    0x800019b6   0x0000008a   Code   RO         1291    .text               c_wu.l(lludiv10.o)
+    0x80001a40   0x00000080   Code   RO         1293    .text               c_wu.l(_printf_fp_infnan.o)
+    0x80001ac0   0x000000e4   Code   RO         1297    .text               c_wu.l(bigflt0.o)
+    0x80001ba4   0x00000008   Code   RO         1324    .text               c_wu.l(ferror.o)
+    0x80001bac   0x000001e2   Code   RO         1326    .text               c_wu.l(flsbuf.o)
+    0x80001d8e   0x00000042   Code   RO         1328    .text               c_wu.l(ftell.o)
+    0x80001dd0   0x00000046   Code   RO         1330    .text               c_wu.l(setvbuf.o)
+    0x80001e16   0x0000000e   Code   RO         1339    .text               c_wu.l(defsig_rtred_outer.o)
+    0x80001e24   0x0000003e   Code   RO         1343    .text               c_wu.l(strlen.o)
+    0x80001e62   0x00000000   Code   RO         1431    .text               c_wu.l(maybetermalloc1.o)
+    0x80001e62   0x00000034   Code   RO         1433    .text               c_wu.l(h1_extend.o)
+    0x80001e96   0x000000d6   Code   RO         1441    .text               c_wu.l(fwritefast.o)
+    0x80001f6c   0x00000012   Code   RO         1447    .text               c_wu.l(exit.o)
+    0x80001f7e   0x0000000a   Code   RO         1449    .text               c_wu.l(defsig_exit.o)
+    0x80001f88   0x00000034   Code   RO         1455    .text               c_wu.l(defsig_rtred_inner.o)
+    0x80001fbc   0x0000000e   Code   RO         1457    .text               c_wu.l(defsig_rtmem_outer.o)
+    0x80001fca   0x00000006   PAD
+    0x80001fd0   0x0000007c   Code   RO         1463    .text               c_wu.l(strcmpv8m_maindsp.o)
+    0x8000204c   0x0000000c   Code   RO         1478    .text               c_wu.l(sys_exit.o)
+    0x80002058   0x00000032   Code   RO         1498    .text               c_wu.l(defsig_general.o)
+    0x8000208a   0x00000002   PAD
+    0x8000208c   0x00000050   Code   RO         1502    .text               c_wu.l(defsig_rtmem_inner.o)
+    0x800020dc   0x0000000e   Code   RO         1512    .text               c_wu.l(sys_wrch.o)
+    0x800020ea   0x00000002   PAD
+    0x800020ec   0x00000298   Code   RO          131    .text.ARM_I2C_Control  Driver_I2C.o
+    0x80002384   0x00000004   Code   RO           35    .text.ARM_I2C_GetCapabilities  Driver_I2C.o
+    0x80002388   0x0000000a   Code   RO           33    .text.ARM_I2C_GetVersion  Driver_I2C.o
+    0x80002392   0x00000002   PAD
+    0x80002394   0x000000ac   Code   RO          129    .text.ARM_I2C_MasterReceive  Driver_I2C.o
+    0x80002440   0x000000ba   Code   RO          125    .text.ARM_I2C_MasterTransmit  Driver_I2C.o
+    0x800024fa   0x00000002   PAD
+    0x800024fc   0x000001ca   Code   RO          123    .text.ARM_I2C_PowerControl  Driver_I2C.o
+    0x800026c6   0x00000002   PAD
+    0x800026c8   0x0000000e   Code   RO          338    .text.DMA0_IRQ0Handler  Driver_DMA.o
+    0x800026d6   0x00000002   PAD
+    0x800026d8   0x0000000e   Code   RO          360    .text.DMA0_IRQ10Handler  Driver_DMA.o
+    0x800026e6   0x00000002   PAD
+    0x800026e8   0x0000000e   Code   RO          362    .text.DMA0_IRQ11Handler  Driver_DMA.o
+    0x800026f6   0x00000002   PAD
+    0x800026f8   0x0000000e   Code   RO          364    .text.DMA0_IRQ12Handler  Driver_DMA.o
+    0x80002706   0x00000002   PAD
+    0x80002708   0x0000000e   Code   RO          366    .text.DMA0_IRQ13Handler  Driver_DMA.o
+    0x80002716   0x00000002   PAD
+    0x80002718   0x0000000e   Code   RO          368    .text.DMA0_IRQ14Handler  Driver_DMA.o
+    0x80002726   0x00000002   PAD
+    0x80002728   0x0000000e   Code   RO          370    .text.DMA0_IRQ15Handler  Driver_DMA.o
+    0x80002736   0x00000002   PAD
+    0x80002738   0x0000000e   Code   RO          372    .text.DMA0_IRQ16Handler  Driver_DMA.o
+    0x80002746   0x00000002   PAD
+    0x80002748   0x0000000e   Code   RO          374    .text.DMA0_IRQ17Handler  Driver_DMA.o
+    0x80002756   0x00000002   PAD
+    0x80002758   0x0000000e   Code   RO          376    .text.DMA0_IRQ18Handler  Driver_DMA.o
+    0x80002766   0x00000002   PAD
+    0x80002768   0x0000000e   Code   RO          378    .text.DMA0_IRQ19Handler  Driver_DMA.o
+    0x80002776   0x00000002   PAD
+    0x80002778   0x0000000e   Code   RO          342    .text.DMA0_IRQ1Handler  Driver_DMA.o
+    0x80002786   0x00000002   PAD
+    0x80002788   0x0000000e   Code   RO          380    .text.DMA0_IRQ20Handler  Driver_DMA.o
+    0x80002796   0x00000002   PAD
+    0x80002798   0x0000000e   Code   RO          382    .text.DMA0_IRQ21Handler  Driver_DMA.o
+    0x800027a6   0x00000002   PAD
+    0x800027a8   0x0000000e   Code   RO          384    .text.DMA0_IRQ22Handler  Driver_DMA.o
+    0x800027b6   0x00000002   PAD
+    0x800027b8   0x0000000e   Code   RO          386    .text.DMA0_IRQ23Handler  Driver_DMA.o
+    0x800027c6   0x00000002   PAD
+    0x800027c8   0x0000000e   Code   RO          388    .text.DMA0_IRQ24Handler  Driver_DMA.o
+    0x800027d6   0x00000002   PAD
+    0x800027d8   0x0000000e   Code   RO          390    .text.DMA0_IRQ25Handler  Driver_DMA.o
+    0x800027e6   0x00000002   PAD
+    0x800027e8   0x0000000e   Code   RO          392    .text.DMA0_IRQ26Handler  Driver_DMA.o
+    0x800027f6   0x00000002   PAD
+    0x800027f8   0x0000000e   Code   RO          394    .text.DMA0_IRQ27Handler  Driver_DMA.o
+    0x80002806   0x00000002   PAD
+    0x80002808   0x0000000e   Code   RO          396    .text.DMA0_IRQ28Handler  Driver_DMA.o
+    0x80002816   0x00000002   PAD
+    0x80002818   0x0000000e   Code   RO          398    .text.DMA0_IRQ29Handler  Driver_DMA.o
+    0x80002826   0x00000002   PAD
+    0x80002828   0x0000000e   Code   RO          344    .text.DMA0_IRQ2Handler  Driver_DMA.o
+    0x80002836   0x00000002   PAD
+    0x80002838   0x0000000e   Code   RO          400    .text.DMA0_IRQ30Handler  Driver_DMA.o
+    0x80002846   0x00000002   PAD
+    0x80002848   0x0000000e   Code   RO          402    .text.DMA0_IRQ31Handler  Driver_DMA.o
+    0x80002856   0x00000002   PAD
+    0x80002858   0x0000000e   Code   RO          346    .text.DMA0_IRQ3Handler  Driver_DMA.o
+    0x80002866   0x00000002   PAD
+    0x80002868   0x0000000e   Code   RO          348    .text.DMA0_IRQ4Handler  Driver_DMA.o
+    0x80002876   0x00000002   PAD
+    0x80002878   0x0000000e   Code   RO          350    .text.DMA0_IRQ5Handler  Driver_DMA.o
+    0x80002886   0x00000002   PAD
+    0x80002888   0x0000000e   Code   RO          352    .text.DMA0_IRQ6Handler  Driver_DMA.o
+    0x80002896   0x00000002   PAD
+    0x80002898   0x0000000e   Code   RO          354    .text.DMA0_IRQ7Handler  Driver_DMA.o
+    0x800028a6   0x00000002   PAD
+    0x800028a8   0x0000000e   Code   RO          356    .text.DMA0_IRQ8Handler  Driver_DMA.o
+    0x800028b6   0x00000002   PAD
+    0x800028b8   0x0000000e   Code   RO          358    .text.DMA0_IRQ9Handler  Driver_DMA.o
+    0x800028c6   0x00000002   PAD
+    0x800028c8   0x0000000c   Code   RO          404    .text.DMA0_IRQ_ABORT_Handler  Driver_DMA.o
+    0x800028d4   0x0000000e   Code   RO          430    .text.DMA2_IRQ0Handler  Driver_DMA.o
+    0x800028e2   0x00000002   PAD
+    0x800028e4   0x0000000e   Code   RO          450    .text.DMA2_IRQ10Handler  Driver_DMA.o
+    0x800028f2   0x00000002   PAD
+    0x800028f4   0x0000000e   Code   RO          452    .text.DMA2_IRQ11Handler  Driver_DMA.o
+    0x80002902   0x00000002   PAD
+    0x80002904   0x0000000e   Code   RO          454    .text.DMA2_IRQ12Handler  Driver_DMA.o
+    0x80002912   0x00000002   PAD
+    0x80002914   0x0000000e   Code   RO          456    .text.DMA2_IRQ13Handler  Driver_DMA.o
+    0x80002922   0x00000002   PAD
+    0x80002924   0x0000000e   Code   RO          458    .text.DMA2_IRQ14Handler  Driver_DMA.o
+    0x80002932   0x00000002   PAD
+    0x80002934   0x0000000e   Code   RO          460    .text.DMA2_IRQ15Handler  Driver_DMA.o
+    0x80002942   0x00000002   PAD
+    0x80002944   0x0000000e   Code   RO          462    .text.DMA2_IRQ16Handler  Driver_DMA.o
+    0x80002952   0x00000002   PAD
+    0x80002954   0x0000000e   Code   RO          464    .text.DMA2_IRQ17Handler  Driver_DMA.o
+    0x80002962   0x00000002   PAD
+    0x80002964   0x0000000e   Code   RO          466    .text.DMA2_IRQ18Handler  Driver_DMA.o
+    0x80002972   0x00000002   PAD
+    0x80002974   0x0000000e   Code   RO          468    .text.DMA2_IRQ19Handler  Driver_DMA.o
+    0x80002982   0x00000002   PAD
+    0x80002984   0x0000000e   Code   RO          432    .text.DMA2_IRQ1Handler  Driver_DMA.o
+    0x80002992   0x00000002   PAD
+    0x80002994   0x0000000e   Code   RO          470    .text.DMA2_IRQ20Handler  Driver_DMA.o
+    0x800029a2   0x00000002   PAD
+    0x800029a4   0x0000000e   Code   RO          472    .text.DMA2_IRQ21Handler  Driver_DMA.o
+    0x800029b2   0x00000002   PAD
+    0x800029b4   0x0000000e   Code   RO          474    .text.DMA2_IRQ22Handler  Driver_DMA.o
+    0x800029c2   0x00000002   PAD
+    0x800029c4   0x0000000e   Code   RO          476    .text.DMA2_IRQ23Handler  Driver_DMA.o
+    0x800029d2   0x00000002   PAD
+    0x800029d4   0x0000000e   Code   RO          478    .text.DMA2_IRQ24Handler  Driver_DMA.o
+    0x800029e2   0x00000002   PAD
+    0x800029e4   0x0000000e   Code   RO          480    .text.DMA2_IRQ25Handler  Driver_DMA.o
+    0x800029f2   0x00000002   PAD
+    0x800029f4   0x0000000e   Code   RO          482    .text.DMA2_IRQ26Handler  Driver_DMA.o
+    0x80002a02   0x00000002   PAD
+    0x80002a04   0x0000000e   Code   RO          484    .text.DMA2_IRQ27Handler  Driver_DMA.o
+    0x80002a12   0x00000002   PAD
+    0x80002a14   0x0000000e   Code   RO          486    .text.DMA2_IRQ28Handler  Driver_DMA.o
+    0x80002a22   0x00000002   PAD
+    0x80002a24   0x0000000e   Code   RO          488    .text.DMA2_IRQ29Handler  Driver_DMA.o
+    0x80002a32   0x00000002   PAD
+    0x80002a34   0x0000000e   Code   RO          434    .text.DMA2_IRQ2Handler  Driver_DMA.o
+    0x80002a42   0x00000002   PAD
+    0x80002a44   0x0000000e   Code   RO          490    .text.DMA2_IRQ30Handler  Driver_DMA.o
+    0x80002a52   0x00000002   PAD
+    0x80002a54   0x0000000e   Code   RO          492    .text.DMA2_IRQ31Handler  Driver_DMA.o
+    0x80002a62   0x00000002   PAD
+    0x80002a64   0x0000000e   Code   RO          436    .text.DMA2_IRQ3Handler  Driver_DMA.o
+    0x80002a72   0x00000002   PAD
+    0x80002a74   0x0000000e   Code   RO          438    .text.DMA2_IRQ4Handler  Driver_DMA.o
+    0x80002a82   0x00000002   PAD
+    0x80002a84   0x0000000e   Code   RO          440    .text.DMA2_IRQ5Handler  Driver_DMA.o
+    0x80002a92   0x00000002   PAD
+    0x80002a94   0x0000000e   Code   RO          442    .text.DMA2_IRQ6Handler  Driver_DMA.o
+    0x80002aa2   0x00000002   PAD
+    0x80002aa4   0x0000000e   Code   RO          444    .text.DMA2_IRQ7Handler  Driver_DMA.o
+    0x80002ab2   0x00000002   PAD
+    0x80002ab4   0x0000000e   Code   RO          446    .text.DMA2_IRQ8Handler  Driver_DMA.o
+    0x80002ac2   0x00000002   PAD
+    0x80002ac4   0x0000000e   Code   RO          448    .text.DMA2_IRQ9Handler  Driver_DMA.o
+    0x80002ad2   0x00000002   PAD
+    0x80002ad4   0x0000000c   Code   RO          494    .text.DMA2_IRQ_ABORT_Handler  Driver_DMA.o
+    0x80002ae0   0x000004f4   Code   RO          406    .text.DMA_AbortIRQHandler  Driver_DMA.o
+    0x80002fd4   0x00000274   Code   RO          340    .text.DMA_IRQHandler  Driver_DMA.o
+    0x80003248   0x0000030e   Code   RO          516    .text.DMA_Stop      Driver_DMA.o
+    0x80003556   0x00000002   PAD
+    0x80003558   0x00000002   Code   RO          954    .text.Default_Handler  vectors.o
+    0x8000355a   0x00000002   PAD
+    0x8000355c   0x00000002   Code   RO          956    .text.Fault_Handler  vectors.o
+    0x8000355e   0x00000002   PAD
+    0x80003560   0x0000000c   Code   RO          973    .text.GetSystemAPBClock  sys_clocks.o
+    0x8000356c   0x00000010   Code   RO           53    .text.I2C0_Control  Driver_I2C.o
+    0x8000357c   0x0000000c   Code   RO           51    .text.I2C0_GetDataCount  Driver_I2C.o
+    0x80003588   0x0000000c   Code   RO           55    .text.I2C0_GetStatus  Driver_I2C.o
+    0x80003594   0x0000000c   Code   RO           31    .text.I2C0_IRQHandler  Driver_I2C.o
+    0x800035a0   0x0000003e   Code   RO           37    .text.I2C0_Initialize  Driver_I2C.o
+    0x800035de   0x00000002   PAD
+    0x800035e0   0x00000020   Code   RO           45    .text.I2C0_MasterReceive  Driver_I2C.o
+    0x80003600   0x00000020   Code   RO           43    .text.I2C0_MasterTransmit  Driver_I2C.o
+    0x80003620   0x0000000c   Code   RO           41    .text.I2C0_PowerControl  Driver_I2C.o
+    0x8000362c   0x00000074   Code   RO           49    .text.I2C0_SlaveReceive  Driver_I2C.o
+    0x800036a0   0x00000072   Code   RO           47    .text.I2C0_SlaveTransmit  Driver_I2C.o
+    0x80003712   0x00000002   PAD
+    0x80003714   0x00000052   Code   RO           39    .text.I2C0_Uninitialize  Driver_I2C.o
+    0x80003766   0x00000002   PAD
+    0x80003768   0x0000000c   Code   RO           57    .text.I2C1_IRQHandler  Driver_I2C.o
+    0x80003774   0x0000000c   Code   RO           79    .text.I2C2_IRQHandler  Driver_I2C.o
+    0x80003780   0x0000000c   Code   RO          101    .text.I2C3_IRQHandler  Driver_I2C.o
+    0x8000378c   0x000000ba   Code   RO           27    .text.I2C_HandleIRQStatus  Driver_I2C.o
+    0x80003846   0x00000002   PAD
+    0x80003848   0x00000052   Code   RO           29    .text.I2C_IRQHandler  Driver_I2C.o
+    0x8000389a   0x00000002   PAD
+    0x8000389c   0x00000026   Code   RO          127    .text.I2C_SetTargetAddress  Driver_I2C.o
+    0x800038c2   0x00000002   PAD
+    0x800038c4   0x0000000c   Code   RO          203    .text.I2S0_Control  Driver_I2S.o
+    0x800038d0   0x0000000c   Code   RO          201    .text.I2S0_GetRxCount  Driver_I2S.o
+    0x800038dc   0x00000012   Code   RO          205    .text.I2S0_GetStatus  Driver_I2S.o
+    0x800038ee   0x00000002   PAD
+    0x800038f0   0x0000000c   Code   RO          199    .text.I2S0_GetTxCount  Driver_I2S.o
+    0x800038fc   0x0000000c   Code   RO          181    .text.I2S0_IRQHandler  Driver_I2S.o
+    0x80003908   0x0000005a   Code   RO          189    .text.I2S0_Initialize  Driver_I2S.o
+    0x80003962   0x00000002   PAD
+    0x80003964   0x0000000c   Code   RO          193    .text.I2S0_PowerControl  Driver_I2S.o
+    0x80003970   0x000000a4   Code   RO          197    .text.I2S0_Receive  Driver_I2S.o
+    0x80003a14   0x000000a4   Code   RO          195    .text.I2S0_Send     Driver_I2S.o
+    0x80003ab8   0x00000030   Code   RO          191    .text.I2S0_Uninitialize  Driver_I2S.o
+    0x80003ae8   0x0000000c   Code   RO          207    .text.I2S1_IRQHandler  Driver_I2S.o
+    0x80003af4   0x0000000c   Code   RO          227    .text.I2S2_IRQHandler  Driver_I2S.o
+    0x80003b00   0x0000000c   Code   RO          247    .text.I2S3_IRQHandler  Driver_I2S.o
+    0x80003b0c   0x00000398   Code   RO          289    .text.I2S_Control   Driver_I2S.o
+    0x80003ea4   0x00000006   Code   RO          187    .text.I2S_GetCapabilities  Driver_I2S.o
+    0x80003eaa   0x00000002   PAD
+    0x80003eac   0x0000000a   Code   RO          185    .text.I2S_GetVersion  Driver_I2S.o
+    0x80003eb6   0x00000002   PAD
+    0x80003eb8   0x00000080   Code   RO          183    .text.I2S_IRQHandler  Driver_I2S.o
+    0x80003f38   0x00000276   Code   RO          287    .text.I2S_PowerControl  Driver_I2S.o
+    0x800041ae   0x00000002   PAD
+    0x800041b0   0x000000c0   Code   RO          291    .text.I2S_SetSamplingRate  Driver_I2S.o
+    0x80004270   0x0000000c   Code   RO          267    .text.LPI2S_IRQHandler  Driver_I2S.o
+    0x8000427c   0x0000002a   Code   RO          607    .text.LPPDM_IRQHandler  Driver_PDM.o
+    0x800042a6   0x00000002   PAD
+    0x800042a8   0x00000102   Code   RO          844    .text.MPU_Load_Regions  mpu.o
+    0x800043aa   0x00000002   PAD
+    0x800043ac   0x000000c2   Code   RO          848    .text.MPU_Setup     mpu.o
+    0x8000446e   0x00000002   PAD
+    0x80004470   0x0000002a   Code   RO          587    .text.PDM_AUDIO_DET_IRQHandler  Driver_PDM.o
+    0x8000449a   0x00000002   PAD
+    0x8000449c   0x0000001a   Code   RO          585    .text.PDM_ERROR_IRQHandler  Driver_PDM.o
+    0x800044b6   0x00000002   PAD
+    0x800044b8   0x0000002a   Code   RO          583    .text.PDM_WARN_IRQHandler  Driver_PDM.o
+    0x800044e2   0x00000002   PAD
+    0x800044e4   0x00000020   Code   RO          831    .text.RTSS_IsCacheInvalidate_Required_by_Addr  cache.o
+    0x80004504   0x00000018   Code   RO          906  * .text.Reset_Handler  startup.o
+    0x8000451c   0x00000008   Code   RO          908    .text.Reset_Handler_C  startup.o
+    0x80004524   0x000000ca   Code   RO          715    .text.SDMMC_IRQHandler  sd_host.o
+    0x800045ee   0x00000002   PAD
+    0x800045f0   0x00000002   Code   RO          719    .text.SDMMC_WAKEUP_IRQHandler  sd_host.o
+    0x800045f2   0x00000002   PAD
+    0x800045f4   0x0000009c   Code   RO          928    .text.SystemInit    system.o
+    0x80004690   0x00000002   Code   RO          924    .text.System_HandleSpuriousWakeup  system.o
+    0x80004692   0x00000002   PAD
+    0x80004694   0x000000e8   Code   RO          942    .text.TGU_Setup     tgu.o
+    0x8000477c   0x000001bc   Code   RO          926    .text._platform_pre_stackheap_init  system.o
+    0x80004938   0x00000062   Code   RO          156    .text.i2c_master_init  i2c.o
+    0x8000499a   0x00000002   PAD
+    0x8000499c   0x00000282   Code   RO          162    .text.i2c_master_rx_isr  i2c.o
+    0x80004c1e   0x00000002   PAD
+    0x80004c20   0x00000240   Code   RO          154    .text.i2c_master_set_clock  i2c.o
+    0x80004e60   0x00000192   Code   RO          160    .text.i2c_master_tx_isr  i2c.o
+    0x80004ff2   0x00000002   PAD
+    0x80004ff4   0x00000092   Code   RO          152    .text.i2c_set_target_addr  i2c.o
+    0x80005086   0x00000002   PAD
+    0x80005088   0x0000006a   Code   RO          158    .text.i2c_slave_init  i2c.o
+    0x800050f2   0x00000002   PAD
+    0x800050f4   0x000000b8   Code   RO          166    .text.i2c_slave_rx_isr  i2c.o
+    0x800051ac   0x000000ec   Code   RO          164    .text.i2c_slave_tx_isr  i2c.o
+    0x80005298   0x0000011e   Code   RO          321    .text.i2s_rx_irq_handler  i2s.o
+    0x800053b6   0x00000002   PAD
+    0x800053b8   0x000000fa   Code   RO          319    .text.i2s_tx_irq_handler  i2s.o
+    0x800054b2   0x0000000e   PAD
+    0x800054c0   0x0000082c   Code   RO            6    .text.main          main.o
+    0x80005cec   0x0000001c   Code   RO          644    .text.pdm_audio_detect_irq_handler  pdm.o
+    0x80005d08   0x0000000a   Code   RO          642    .text.pdm_error_detect_irq_handler  pdm.o
+    0x80005d12   0x00000002   PAD
+    0x80005d14   0x000002ca   Code   RO          646    .text.pdm_warning_irq_handler  pdm.o
+    0x80005fde   0x00000002   PAD
+    0x80005fe0   0x0000003e   Code   RO          894    .text.sau_tcm_ns_setup  sau_tcm_ns_setup.o
+    0x8000601e   0x00000002   PAD
+    0x80006020   0x0000000e   Code   RO          998    .text.sys_busy_loop_init  sys_utils.o
+    0x8000602e   0x00000002   PAD
+    0x80006030   0x0000005a   Code   RO         1000    .text.sys_busy_loop_us  sys_utils.o
+    0x8000608a   0x0000003e   Code   RO         1300    CL$$btod_d2e        c_wu.l(btod.o)
+    0x800060c8   0x00000046   Code   RO         1302    CL$$btod_d2e_denorm_low  c_wu.l(btod.o)
+    0x8000610e   0x00000060   Code   RO         1301    CL$$btod_d2e_norm_op1  c_wu.l(btod.o)
+    0x8000616e   0x00000002   PAD
+    0x80006170   0x00000338   Code   RO         1310    CL$$btod_div_common  c_wu.l(btod.o)
+    0x800064a8   0x000000dc   Code   RO         1307    CL$$btod_e2e        c_wu.l(btod.o)
+    0x80006584   0x0000002a   Code   RO         1304    CL$$btod_ediv       c_wu.l(btod.o)
+    0x800065ae   0x0000002a   Code   RO         1303    CL$$btod_emul       c_wu.l(btod.o)
+    0x800065d8   0x00000244   Code   RO         1309    CL$$btod_mult_common  c_wu.l(btod.o)
+    0x8000681c   0x00000030   Code   RO         1416    i.__ARM_fpclassify  m_wv.l(fpclassify.o)
+    0x8000684c   0x000000c2   Code   RO         1112    i.__hardfp_lroundf  m_wv.l(lroundf.o)
+    0x8000690e   0x0000000e   Code   RO         1064    i._is_digit         c_wu.l(__printf_wp.o)
+    0x8000691c   0x0000001c   Code   RO         1207    i.fputc             c_wu.l(fputc.o)
+    0x80006938   0x0000002c   Code   RO         1337    locale$$code        c_wu.l(lc_numeric_c.o)
+    0x80006964   0x0000000e   Code   RO         1224    x$fpl$ffixr         fz_wv.l(ffix.o)
+    0x80006972   0x0000008c   Code   RO         1412    x$fpl$fnaninf       fz_wv.l(fnaninf.o)
+    0x800069fe   0x0000001e   Code   RO         1476    x$fpl$fpinit        fz_wv.l(fpinit_81m.o)
+    0x80006a1c   0x00000060   Code   RO         1227    x$fpl$frnd          fz_wv.l(frnd.o)
+    0x80006a7c   0x00000004   Code   RO         1110    x$fpl$printf1       fz_wv.l(printf1.o)
+    0x80006a80   0x00000000   Code   RO         1229    x$fpl$usenofp       fz_wv.l(usenofp.o)
+    0x80006a80   0x00000028   Data   RO         1036    .constdata          c_wu.l(_printf_hex_int.o)
+    0x80006aa8   0x00000011   Data   RO         1072    .constdata          c_wu.l(__printf_flags_ss_wp.o)
+    0x80006ab9   0x00000004   Data   RO         1230    .constdata          c_wu.l(sys_io_names.o)
+    0x80006abd   0x00000004   Data   RO         1231    .constdata          c_wu.l(sys_io_names.o)
+    0x80006ac1   0x00000004   Data   RO         1232    .constdata          c_wu.l(sys_io_names.o)
+    0x80006ac5   0x00000003   PAD
+    0x80006ac8   0x00000094   Data   RO         1298    .constdata          c_wu.l(bigflt0.o)
+    0x80006b5c   0x00000030   Data   RO          134    .rodata.Driver_I2C0  Driver_I2C.o
+    0x80006b8c   0x0000002c   Data   RO          294    .rodata.Driver_SAI0  Driver_I2S.o
+    0x80006bb8   0x000009a1   Data   RO            8    .rodata.str1.1      main.o
+    0x80007559   0x00000003   PAD
+    0x8000755c   0x00000030   Data   RO         1545    Region$$Table       anon$$obj.o
+    0x8000758c   0x0000001c   Data   RO         1336    locale$$data        c_wu.l(lc_numeric_c.o)
+

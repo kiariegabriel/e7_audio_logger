@@ -1,0 +1,8 @@
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/CMakeFiles/database.dir
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/CMakeFiles/M55_HE.Debug+AE722F80F55D5LS.dir
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/CMakeFiles/M55_HE.Debug+AE722F80F55D5LS-build.dir
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/CMakeFiles/M55_HE.Debug+AE722F80F55D5LS-configure.dir
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/CMakeFiles/M55_HE.Debug+AE722F80F55D5LS-executes.dir
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/CMakeFiles/M55_HE.Debug+AE722F80F55D5LS-database.dir
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/CMakeFiles/rebuild_cache.dir

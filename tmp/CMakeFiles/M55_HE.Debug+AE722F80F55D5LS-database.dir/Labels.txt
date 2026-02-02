@@ -1,0 +1,11 @@
+# Target labels
+ M55_HE.Debug+AE722F80F55D5LS
+# Source files and their labels
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/CMakeFiles/M55_HE.Debug+AE722F80F55D5LS-database
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/CMakeFiles/M55_HE.Debug+AE722F80F55D5LS-database.rule
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/M55_HE.Debug+AE722F80F55D5LS/src/M55_HE.Debug+AE722F80F55D5LS-stamp/M55_HE.Debug+AE722F80F55D5LS-database.rule
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/M55_HE.Debug+AE722F80F55D5LS/src/M55_HE.Debug+AE722F80F55D5LS-stamp/M55_HE.Debug+AE722F80F55D5LS-configure.rule
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/M55_HE.Debug+AE722F80F55D5LS/src/M55_HE.Debug+AE722F80F55D5LS-stamp/M55_HE.Debug+AE722F80F55D5LS-patch.rule
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/M55_HE.Debug+AE722F80F55D5LS/src/M55_HE.Debug+AE722F80F55D5LS-stamp/M55_HE.Debug+AE722F80F55D5LS-update.rule
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/M55_HE.Debug+AE722F80F55D5LS/src/M55_HE.Debug+AE722F80F55D5LS-stamp/M55_HE.Debug+AE722F80F55D5LS-download.rule
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/M55_HE.Debug+AE722F80F55D5LS/src/M55_HE.Debug+AE722F80F55D5LS-stamp/M55_HE.Debug+AE722F80F55D5LS-mkdir.rule

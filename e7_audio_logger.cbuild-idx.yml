@@ -1,0 +1,17 @@
+build-idx:
+  generated-by: csolution version 2.12.0+p48-gd3223e31
+  cdefault: ${CMSIS_COMPILER_ROOT}/cdefault.yml
+  csolution: e7_audio_logger.csolution.yml
+  cbuild-run: out/e7_audio_logger+AE722F80F55D5LS.cbuild-run.yml
+  tmpdir: tmp
+  cprojects:
+    - cproject: M55_HE/M55_HE.cproject.yml
+  cbuilds:
+    - cbuild: out/M55_HE/AE722F80F55D5LS/Debug/M55_HE.Debug+AE722F80F55D5LS.cbuild.yml
+      project: M55_HE
+      configuration: .Debug+AE722F80F55D5LS
+      messages:
+        info:
+          - e7_audio_logger.cbuild-pack.yml - file is already up-to-date
+          - e7_audio_logger+AE722F80F55D5LS.cbuild-run.yml - file is already up-to-date
+          - M55_HE.Debug+AE722F80F55D5LS.cbuild.yml - file generated successfully

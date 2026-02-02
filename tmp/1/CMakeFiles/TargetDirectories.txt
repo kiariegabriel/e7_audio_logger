@@ -1,0 +1,12 @@
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/1/CMakeFiles/database.dir
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/1/CMakeFiles/M55_HE.Debug+AE722F80F55D5LS.dir
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/1/CMakeFiles/Group_Source_Files.dir
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/1/CMakeFiles/AlifSemiconductor_CMSIS_Driver_I2C_2_0_0.dir
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/1/CMakeFiles/AlifSemiconductor_CMSIS_Driver_SAI_2_0_0.dir
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/1/CMakeFiles/AlifSemiconductor_Device_SOC_Peripherals_DMA_2_0_0.dir
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/1/CMakeFiles/AlifSemiconductor_Device_SOC_Peripherals_PDM_2_0_0.dir
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/1/CMakeFiles/AlifSemiconductor_Device_SOC_Peripherals_PINCONF_2_0_0.dir
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/1/CMakeFiles/AlifSemiconductor_Device_SOC_Peripherals_SDMMC_2_0_0.dir
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/1/CMakeFiles/AlifSemiconductor_Device_Startup_2_0_0.dir
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/1/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Documents/alif/e7_audio_logger/tmp/1/CMakeFiles/rebuild_cache.dir
